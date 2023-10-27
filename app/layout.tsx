@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/navigation/navbar'
 import Footer from '@/components/footer'
+import DarkMode from '@/components/toggle/darkmode'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

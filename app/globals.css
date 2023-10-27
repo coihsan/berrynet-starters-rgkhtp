@@ -25,3 +25,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@layer utilities{
+  .flexCenter{
+    @apply flex items-center justify-center
+  }
+  .flexBetween{
+    @apply flex items-center justify-between
+  }
+  .flexColCenter{
+    @apply flex flex-col items-center justify-center
+  }
+}

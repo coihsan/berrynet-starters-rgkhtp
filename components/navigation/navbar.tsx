@@ -27,27 +27,21 @@ const navitems = [
         title: "Bantuan & Dukungan",
         path: "#",
     },
-    {
-        title: "Berlangganan",
-        path: "#",
-    },
 ]
 
 export default function Navbar(){
     return (
-        <nav className="relative w-full border-b border-gray-300 bg-indigo-500 rounded-xl backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:border lg:dark:bg-zinc-800/30">
-            <div className="max-w-screen-xl mx-auto fixed top-5 left-0 right-0 lg:p-4 z-50">
-                <div className="z-10 items-center justify-between font-mono text-sm lg:flex">
-                    <Link href='#' className="font-bold">
-                        <Image src='/berrynet.svg' alt='Logo' width={200} height={60} priority className=''/>
+        <nav className="fixed w-[100%] bg-indigo-700 dark:bg-indigo-800 h-auto">
+            <div className="lg:p-4 items-center justify-between text-sm lg:flex  max-w-screen-xl mx-auto">
+                    <Link href='/' className="font-bold hover:opacity-[0.7]">
+                        <Image src='/berrynet.svg' alt='Logo' width={200} height={60} priority/>
                     </Link>
                     <div className='flex items-center'>
                     {navitems.map((menu) =>(
-                        <Link href={menu.path} className='px-5 py-2 hover:bg-neutral-100 hover:translate-y-[-5px] rounded-full transition-all'> {menu.title}</Link>
+                        <Link href={menu.path} className='text-white hover:text-indigo-600 px-5 py-2 hover:bg-indigo-300 rounded-full transition-all'> {menu.title}</Link>
                     ))}
                     <DarkMode />
                     </div>
-                </div>
             </div>
         </nav>
     )

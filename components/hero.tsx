@@ -5,21 +5,21 @@ const SERVICES_DATA = [
         id: '01',
         title: 'Home Internet',
         desc: 'Lorem ipsum dolor sit amet',
-        path: '/inet',
+        path: '/Homenet',
         icon: '#'
     },
     {
         id: '02',
         title: 'Apartment Internet',
         desc: 'Lorem ipsum dolor sit amet',
-        path: '#',
+        path: '/Apartmentnet',
         icon: '#'
     },
     {
         id: '03',
         title: 'Business Internet',
         desc: 'Lorem ipsum dolor sit amet',
-        path: '#',
+        path: '/Businessnet',
         icon: '#'
     }
 ]
@@ -27,7 +27,7 @@ export function Segmentation(){
     return (
         <div className='grid grid-cols-3 max-[600px]:grid-cols-1 gap-5 w-full max-w-screen-xl mx-atuo '>
             {SERVICES_DATA.map((data) =>(
-                <div className='rounded-xl group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-indigo-100 hover:dark:border-indigo-700 hover:dark:bg-indigo-800/30'>
+                <div className='rounded-xl group rounded-lg border border-transparent px-5 py-4 transition-all hover:translate-y-[-5px] hover:border-gray-300 ease-in-out hover:bg-indigo-100 hover:dark:border-indigo-700 hover:dark:bg-indigo-800/30'>
                     <Link
                     href={data.path}
                     className=""

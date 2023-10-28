@@ -25,9 +25,10 @@ const SERVICES_DATA = [
 ]
 export function Segmentation(){
     return (
-        <div className='grid grid-cols-3 max-[600px]:grid-cols-1 gap-5 max-w-screen-xl'>
+        <div className='grid grid-cols-3 max-[600px]:grid-cols-1 gap-5 max-w-screen-xl '>
             {SERVICES_DATA.map((data) =>(
-                <div className={'group rounded-lg w-full transition-all hover:translate-y-[-5px] ease-in-out bg-indigo-600 px-5 py-10'}>
+                <div className='p-[2px] bg-gradient-to-l from-indigo-900 to-fuchsia-900 rounded-lg transition-all hover:translate-y-[-5px] ease-in-out'>
+                    <div className={'group rounded-lg w-full bg-gradient-to-br from-indigo-900 to-fuchsia-900 px-5 py-10'}>
                     <Link
                     href={data.path}
                     className="flexColCenter gap-3"
@@ -41,28 +42,21 @@ export function Segmentation(){
                     </div>
                     </Link>
                 </div>
+                </div>
             ))}
         </div>
     )
 }
-export function CekArea(){
-    return(
-        <div className='flex items-center gap-3'>
-            <div>Cek Area</div>
-            <input className='h-[30px]' type="search" name="" id="" />
-            <button>Subscribe Now</button>
-        </div>
-    )
-}
+
 const Hero = () =>{
     return (
         <section className='px-2 flexColCenter gap-5 w-full h-[100vh]'>
             <center className='text-7xl max-w-screen-lg max-[600px]:text-4xl font-bold text-white '>Experience the Difference of High-Speed Internet</center>
             <center className='text-neutral-500 text-2xl max-w-2xl'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</center>
-            <div className='pt-10 flexColCenter gap-3'>
+            <div className='pt-5 flexColCenter gap-3'>
                 <center className='mb-5 text-[1.5rem]'>What type of internet do you need?</center>
                 <Segmentation />
-                <CekArea />
+    
             </div>
         </section>
     )

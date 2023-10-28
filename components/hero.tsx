@@ -27,11 +27,10 @@ export function Segmentation(){
     return (
         <div className='grid grid-cols-3 max-[600px]:grid-cols-1 gap-5 w-full max-w-screen-xl mx-atuo '>
             {SERVICES_DATA.map((data) =>(
-                <div className='rounded-xl group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'>
+                <div className='rounded-xl group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-indigo-100 hover:dark:border-indigo-700 hover:dark:bg-indigo-800/30'>
                     <Link
                     href={data.path}
                     className=""
-                    target="_blank"
                     rel="noopener noreferrer"
                     >
                     <h2 className={`mb-3 text-2xl font-bold`}>{data.title}</h2>
@@ -48,7 +47,7 @@ export function Segmentation(){
 
 const Hero = () =>{
     return (
-        <section className='px-2 flexColCenter w-full mx-atuo h-[100vh]'>
+        <section className='px-2 flexColCenter gap-5 w-full mx-atuo h-[100vh]'>
             <center className='text-7xl max-w-screen-lg max-[600px]:text-4xl font-medium'>Experience the Difference of High-Speed Internet</center>
             <center>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</center>
             <div className='pt-10 flexColCenter gap-3'>

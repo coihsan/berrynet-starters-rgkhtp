@@ -35,8 +35,8 @@ const navitems = [
 
 export default function Navbar(){
     return (
-        <nav className="fixed left-0 top-0 right-0 w-full border-b border-gray-300 bg-gradient-to-b from-zinc-200 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-            <div className="max-w-screen-xl mx-auto ">
+        <nav className="relative w-full border-b border-gray-300 bg-indigo-500 rounded-xl backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:border lg:dark:bg-zinc-800/30">
+            <div className="max-w-screen-xl mx-auto fixed top-5 left-0 right-0 lg:p-4 z-50">
                 <div className="z-10 items-center justify-between font-mono text-sm lg:flex">
                     <Link href='#' className="font-bold">
                         <Image src='/berrynet.svg' alt='Logo' width={200} height={60} priority className=''/>

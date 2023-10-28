@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/navigation/navbar'
-import Footer from '@/components/footer'
+import Overlay from '@/components/overlay'
 import DarkMode from '@/components/toggle/darkmode'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +23,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
-        <Footer />
+        <Overlay />
       </body>
     </html>
   )

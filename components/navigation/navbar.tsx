@@ -36,7 +36,7 @@ export default function Navbar(){
                     <Link href='/' className="font-bold hover:opacity-[0.7]">
                         <Image src='/berrynet.svg' alt='Logo' width={200} height={60} priority/>
                     </Link>
-                    <div className='flex items-center'>
+                    <div className='flex items-center max-[600px]:hidden'>
                     {navitems.map((menu) =>(
                         <Link href={menu.path} className='text-white hover:text-indigo-100 px-5 py-2 hover:bg-indigo-600 rounded-full transition-all'> {menu.title}</Link>
                     ))}

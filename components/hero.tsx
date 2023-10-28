@@ -45,15 +45,24 @@ export function Segmentation(){
         </div>
     )
 }
-
+export function CekArea(){
+    return(
+        <div className='flex items-center gap-3'>
+            <div>Cek Area</div>
+            <input className='h-[30px]' type="search" name="" id="" />
+            <button>Subscribe Now</button>
+        </div>
+    )
+}
 const Hero = () =>{
     return (
         <section className='px-2 flexColCenter gap-5 w-full h-[100vh]'>
             <center className='text-7xl max-w-screen-lg max-[600px]:text-4xl font-bold text-white '>Experience the Difference of High-Speed Internet</center>
-            <center className='text-neutral-500'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</center>
+            <center className='text-neutral-500 text-2xl max-w-2xl'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</center>
             <div className='pt-10 flexColCenter gap-3'>
                 <center className='mb-5 text-[1.5rem]'>What type of internet do you need?</center>
                 <Segmentation />
+                <CekArea />
             </div>
         </section>
     )

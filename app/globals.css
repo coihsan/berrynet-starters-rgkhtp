@@ -39,4 +39,7 @@ body {
     background-color: rgb(49, 46, 129);
     background-image: radial-gradient(at 88% 9%, rgb(192, 38, 211) 0, transparent 61%), radial-gradient(at 22% 90%, rgb(59, 130, 246) 0, transparent 47%);
   }
+  .containers-center{
+    @apply max-w-screen-xl mx-auto
+  }
 }

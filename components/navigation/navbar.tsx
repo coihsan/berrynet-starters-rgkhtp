@@ -7,16 +7,16 @@ const navitems = [
         path: "#",
     },
     {
-        title: "Produk",
+        title: "Products",
         path: "#",
         submenu :
         {
-            title: "Produk 1",
+            title: "Product 1",
             path: "#"
         },
     },
     {
-        title: "Promo",
+        title: "Promotion",
         path: "#",
     },
     {
@@ -24,7 +24,7 @@ const navitems = [
         path: "#",
     },
     {
-        title: "Bantuan & Dukungan",
+        title: "Help & Support",
         path: "#",
     },
 ]

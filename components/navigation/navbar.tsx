@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { data } from 'autoprefixer'
 const navitems = [
     {
         title: "Home",
@@ -19,13 +20,22 @@ const navitems = [
         path: "#",
     },
     {
+        title: "Help & Support",
+        path: "#",
+    },
+    {
         title: "Check Area",
         path: "#",
     },
     {
-        title: "Help & Support",
+        title: "Subscribe",
         path: "#",
-    },
+        theme: {
+            backgroundColor: "#be185d",
+            paddingLeft: "2rem",
+            paddingRight: "2rem",
+        }
+    }
 ]
 
 export default function Navbar(){
@@ -35,9 +45,9 @@ export default function Navbar(){
                     <Link href='/' className="font-bold hover:opacity-[0.7]">
                         <Image className='max-[600px]:w-[120px]' src='/berrynet.svg' alt='Logo' width={160} height={60} priority/>
                     </Link>
-                    <div className='flex items-center max-[600px]:hidden'>
+                    <div className='flex items-center gap-3 max-[600px]:hidden'>
                     {navitems.map((menu) =>(
-                        <Link href={menu.path} className='text-white hover:text-indigo-100 px-5 py-2 hover:bg-indigo-600 rounded-full transition-all'> {menu.title}</Link>
+                        <Link style={menu.theme} href={menu.path} className='text-white hover:text-indigo-100 px-5 py-2 hover:bg-indigo-600 rounded-full transition-all'> {menu.title}</Link>
                     ))}
                     </div>
             </div>

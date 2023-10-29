@@ -13,22 +13,28 @@ const SERVICES_DATA = [
         title: 'Apartment Internet',
         desc: "We are also available for internet services in many Apartments that have partnered with us.",
         path: '/Apartmentnet',
-        icon: '#'
+        icon: '#',
+        theme: {
+            backgroundColor: "#182e4d" ,
+        }
     },
     {
         id: '03',
         title: 'Business Internet',
         desc: "Do you need dedicated internet service or just broadband with mega-bandwith? We have it!",
         path: '/Businessnet',
-        icon: '#'
+        icon: '#',
+        theme: {
+            backgroundColor: "#182e4d" ,
+        }
     }
 ]
 export function Segmentation(){
     return (
         <div className='grid grid-cols-3 max-[600px]:grid-cols-1 gap-5 max-w-screen-xl '>
             {SERVICES_DATA.map((data) =>(
-                <div className='p-[2px] bg-gradient-to-l from-indigo-900 to-fuchsia-900 rounded-lg transition-all hover:translate-y-[-5px] ease-in-out'>
-                    <div className={'group rounded-lg w-full bg-gradient-to-br from-indigo-900 to-fuchsia-900 px-5 py-10'}>
+                <div className='p-[2px] rounded-lg transition-all hover:translate-y-[-5px] ease-in-out'>
+                    <div style={data.theme} className={'group rounded-lg w-full px-5 py-10'}>
                     <Link
                     href={data.path}
                     className="flexColCenter gap-3"
@@ -50,13 +56,12 @@ export function Segmentation(){
 
 const Hero = () =>{
     return (
-        <section className='px-2 flexColCenter gap-5 w-full h-[100vh]'>
-            <center className='text-7xl max-w-screen-lg max-[600px]:text-4xl font-bold text-white '>Experience the Difference of High-Speed Internet</center>
+        <section className='px-2 flexColCenter gap-5 w-full pt-[10rem] max-[600px]:pt-[7rem] bg-gradient-to-br from-[#070d2b] to-[#000312]'>
+            <center className='text-6xl max-w-screen-lg max-[600px]:text-4xl font-bold text-white '>Experience the Difference of <br /> High-Speed Internet</center>
             <center className='text-neutral-500 text-2xl max-w-2xl'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</center>
             <div className='pt-5 flexColCenter gap-3'>
                 <center className='mb-5 text-[1.5rem]'>What type of internet do you need?</center>
                 <Segmentation />
-    
             </div>
         </section>
     )

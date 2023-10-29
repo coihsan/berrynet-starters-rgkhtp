@@ -20,7 +20,7 @@ const navitems = [
         path: "#",
     },
     {
-        title: "Cek Area",
+        title: "Check Area",
         path: "#",
     },
     {
@@ -32,9 +32,9 @@ const navitems = [
 export default function Navbar(){
     return (
         <nav className="fixed w-[100%] backdrop-blur-xl bg-white/10 h-auto">
-            <div className="lg:p-4 items-center justify-between text-sm lg:flex  max-w-screen-xl mx-auto">
+            <div className="lg:p-4 items-center justify-between text-sm lg:flex max-w-screen-xl mx-auto">
                     <Link href='/' className="font-bold hover:opacity-[0.7]">
-                        <Image src='/berrynet.svg' alt='Logo' width={200} height={60} priority/>
+                        <Image src='/berrynet.svg' alt='Logo' width={160} height={60} priority/>
                     </Link>
                     <div className='flex items-center max-[600px]:hidden'>
                     {navitems.map((menu) =>(

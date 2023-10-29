@@ -10,7 +10,7 @@ export default function Footer(){
               src="/berrynet.svg"
               alt="berrynet Logo"
               className="dark:invert"
-              width={300}
+              width={220}
               height={24}
               priority
             />

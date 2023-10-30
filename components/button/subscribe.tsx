@@ -2,7 +2,7 @@ import Link from 'next/link'
 export default function ButtonSubscribe(){
     return (
         <div>
-            <Link href='/subscribe'>Berlangganan</Link>
+            <Link className='bg-[#be185d]' href='/subscribe'>Berlangganan</Link>
         </div>
     )
 }

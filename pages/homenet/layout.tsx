@@ -1,9 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Navbar from '@/app/components/navigation/navbar'
-import Overlay from '@/app/components/overlay'
-import DarkMode from '@/app/ui/toggle/darkmode'
+import Navbar from '@/components/navigation/navbar'
+import Overlay from '@/components/overlay'
+import DarkMode from '@/ui/toggle/darkmode'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

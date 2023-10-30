@@ -1,4 +1,4 @@
-import {quicklink, ourproducts, company, helpsupport} from '@/app/components/constants/data'
+import {quicklink, ourproducts, company, helpsupport} from '@/components/constants/data'
 import Link from 'next/link'
 import Image from 'next/image'
 

@@ -4,11 +4,11 @@ import { data } from 'autoprefixer'
 const navitems = [
     {
         title: "Home",
-        path: "#",
+        path: "/",
     },
     {
         title: "Why berrynet?",
-        path: "#",
+        path: "/whyberrynet",
     },
     {
         title: "About berrynet",
@@ -19,11 +19,11 @@ const navitems = [
         path: "#",
     },
     {
-        title: "Check Area",
+        title: "Coverage",
         path: "#",
     },
     {
-        title: "Subscribe",
+        title: "Call Us",
         path: "#",
         theme: {
             backgroundColor: "#be185d",

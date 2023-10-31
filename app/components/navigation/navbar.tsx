@@ -12,10 +12,10 @@ const navitems = [
     },
     {
         title: "About berrynet",
-        path: "#",
+        path: "/app/aboutus.tsx",
     },
     {
-        title: "Help & Support",
+        title: "Projects",
         path: "#",
     },
     {
@@ -43,7 +43,7 @@ export default function Navbar(){
                     </Link>
                     <div className='flex items-center gap-3 max-[600px]:hidden'>
                     {navitems.map((menu) =>(
-                        <Link style={menu.theme} href={menu.path} className='flex gap-2 text-white hover:text-indigo-100 px-5 py-2 hover:bg-indigo-600 rounded-full transition-all'>{menu.icon} {menu.title}</Link>
+                        <Link style={menu.theme} href={menu.path} className='flex gap-2 font-bold text-white hover:text-indigo-100 px-5 py-2 hover:bg-indigo-600 rounded-full transition-all'>{menu.icon} {menu.title}</Link>
                     ))}
                     </div>
             </div>

@@ -1,8 +1,12 @@
+
 import Link from 'next/link'
 import { CekArea } from './cekarea'
-import { lusitana } from '@/ui/fonts';
-import {SERVICESDATA} from '@/components/constants/data'
+import { lusitana } from '@/app/ui/fonts';
+import {SERVICESDATA} from '@/app/components/constants/data'
+
+
 export function Segmentation(){
+
     return (
         <div className='grid grid-cols-3 max-[600px]:grid-cols-1 gap-5 max-w-screen-xl '>
             {SERVICESDATA.map((data) =>(

@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Hero from '@/components/hero'
-import Footer from '@/components/Footer'
+import Hero from '@/app/components/hero'
+import Footer from '@/app/components/Footer'
 
 export default function Home() {
   return (

@@ -12,7 +12,7 @@ const navitems = [
     },
     {
         title: "About berrynet",
-        path: "/app/aboutus.tsx",
+        path: "app/pages/aboutus.tsx",
     },
     {
         title: "Projects",

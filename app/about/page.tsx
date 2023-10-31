@@ -1,26 +1,25 @@
 export default function AboutUs(){
     return(
         <article className="pt-[10rem] max-w-screen-xl mx-auto">
-            <h1 className="text-3xl text-center font-bold">Berrynet Internet Service Provider</h1>
+            <h1 className="text-3xl text-center font-bold">About berrynet</h1>
             <br />
-            <h2 className="font-bold ">Connecting people to the world around them</h2>
+            <p>Berrynet Internet Service Provider was founded on a vision of bringing fast and reliable internet connectivity to communities, setting the stage for a digital revolution. Our journey began in [tahun pendirian] when a group of forward-thinking individuals came together with a shared mission: to bridge the digital divide and empower people with seamless online experiences.</p>
             <br />
-            <p>Berrynet is an internet service provider that is committed to providing fast, reliable, and affordable internet to everyone. We offer a variety of plans to fit every budget and need, and we guarantee fast, reliable connections.</p>
+            <p>As we embarked on this ambitious endeavor, we started small, but with big aspirations. Over the years, our commitment to innovation and customer satisfaction has fueled our growth, enabling us to evolve into the reputable Internet Service Provider we are today.As we embarked on this ambitious endeavor, we started small, but with big aspirations. Over the years, our commitment to innovation and customer satisfaction has fueled our growth, enabling us to evolve into the reputable Internet Service Provider we are today.</p>
             <br />
-            <h3 className="font-bold">Our mission</h3>
-            <p>Our mission is to connect people to the world around them. We believe that everyone should have access to affordable, high-quality internet, and we are committed to making that happen.</p>
+            <p className="font-bold">Key Milestones in Our History:</p>
             <br />
-            <h3 className="font-bold">Our values</h3>
-            <p className="font-medium">We are committed to providing the following values to our customers :</p>
+            <ol className="ml-[1rem] list-disc flex flex-col gap-4">
+                <li>[2013] - In our early days, Berrynet focused on building a strong foundation by laying down the groundwork for our network infrastructure. We started serving a handful of local customers, providing them with reliable internet access.</li>
+                <li>[2015] - As we expanded our services and improved our network infrastructure, our customer base grew. Berrynet quickly gained a reputation for delivering lightning-fast internet speeds and outstanding customer service.</li>
+                <li>We've always stayed at the forefront of technological advancements, continually upgrading our network to keep up with the ever-evolving digital landscape. This commitment to staying ahead of the curve has allowed us to provide state-of-the-art internet solutions.</li>
+                <li>Berrynet expanded its reach to serve more communities and regions. We are proud to have a wide footprint, ensuring that more people can experience the benefits of a strong online presence.</li>
+                <li>During the COVID-19 pandemic, we played a crucial role in keeping individuals, families, and businesses connected. Our reliable services supported remote work, online learning, and digital communication during challenging times.</li>
+                <li>Today, Berrynet is a leading Internet Service Provider, known for our commitment to speed, reliability, security, and customer satisfaction. We continue to invest in cutting-edge technologies and expand our services to meet the ever-growing demands of the digital age.</li>
+            </ol>
             <br />
-            <ul className="ml-[1rem]">
-                <li><strong>Speed :</strong> We offer speeds up to 1 Gbps, so you can stream videos, play games, and download files without any lag.</li>
-                <li><strong>Reliability :</strong> We use the latest technology to ensure that our connections are always up and running.</li>
-                <li><strong>Affordability :</strong> We offer a variety of plans to fit every budget.</li>
-                <li><strong>Excellent customer service :</strong> We are here to help you with any questions or problems you may have.</li>
-            </ul>
-            <br />
-            <p>We invite you to learn more about our company and our internet service. We are confident that you will be satisfied with our products and services.</p>
+            <p>Our journey has been marked by perseverance, dedication, and the unwavering support of our loyal customers. We remain focused on our original mission – to provide fast and dependable internet services that enhance the lives of the people we serve. Thank you for being part of the Berrynet story, and we look forward to many more years of connecting you to a world of possibilities.</p>
+            
         </article>
     )
 }

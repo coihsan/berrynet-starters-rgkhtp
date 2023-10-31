@@ -15,16 +15,16 @@ const navitems = [
         path: "/about",
     },
     {
-        title: "Projects",
-        path: "#",
+        title: "Products",
+        path: "/products",
     },
     {
         title: "Coverage",
-        path: "#",
+        path: "/coverage",
     },
     {
         title: "Call Us",
-        path: "#",
+        path: "/contact",
         theme: {
             backgroundColor: "#be185d",
             paddingLeft: "2rem",

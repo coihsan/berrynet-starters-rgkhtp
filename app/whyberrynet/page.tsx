@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Hero from '@/app/components/hero'
-import Footer from '@/app/components/Footer'
+import Hero from '@/app/hero'
+import Footer from '@/app/Footer'
 import { Children } from 'react'
 
 export default function Home() {

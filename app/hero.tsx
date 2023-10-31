@@ -1,6 +1,6 @@
 
 import Link from 'next/link'
-import { CekArea } from './cekarea'
+import { CekArea } from './components/cekarea'
 import { lusitana } from '@/app/ui/fonts';
 import {SERVICESDATA} from '@/app/components/constants/data'
 

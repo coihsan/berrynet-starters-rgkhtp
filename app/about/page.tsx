@@ -1,6 +1,6 @@
 export default function AboutUs(){
     return(
-        <article>
+        <article className="pt-[10rem]">
             <h1>Berrynet Internet Service Provider</h1>
             <h2>Connecting people to the world around them</h2>
             <p>Berrynet is an internet service provider that is committed to providing fast, reliable, and affordable internet to everyone. We offer a variety of plans to fit every budget and need, and we guarantee fast, reliable connections.</p>

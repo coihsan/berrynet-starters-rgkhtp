@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import CustomLink from '../CustomLinkProps'
 import Image from 'next/image'
 import { data } from 'autoprefixer'
 const navitems = [
@@ -13,7 +12,7 @@ const navitems = [
     },
     {
         title: "About berrynet",
-        path: "app/components/pages/aboutus.tsx",
+        path: "/about",
     },
     {
         title: "Projects",
@@ -44,7 +43,7 @@ export default function Navbar(){
                     </Link>
                     <div className='flex items-center gap-3 max-[600px]:hidden'>
                     {navitems.map((menu) =>(
-                        <CustomLink style={menu.theme} href={menu.path} prefetch className='flex gap-2 font-bold text-white hover:text-indigo-100 px-5 py-2 hover:bg-indigo-600 rounded-full transition-all'>{menu.icon} {menu.title}</CustomLink>
+                        <Link style={menu.theme} href={menu.path} className='flex gap-2 font-bold text-white hover:text-indigo-100 px-5 py-2 hover:bg-indigo-600 rounded-full transition-all'>{menu.icon} {menu.title}</Link>
                     ))}
                     </div>
             </div>

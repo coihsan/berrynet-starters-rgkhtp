@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '@/app/navbar'
 import Footer from '@/app/Footer'
 import Overlay from '@/app/components/overlay'
+import {Providers} from "./providers";
 import DarkMode from '@/app/ui/toggle/darkmode'
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,11 +20,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#070d2b]`}>
+      <body className={`${inter.className} bg-[#070d2b] dark`}>
         <Navbar />
-        <main>
+        <Providers>
           {children}
-        </main>
+          </Providers>
         <Footer />
         <Overlay />
       </body>

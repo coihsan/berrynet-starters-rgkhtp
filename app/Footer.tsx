@@ -7,9 +7,6 @@ import Image from 'next/image'
 export default function Footer(){
     const [isExpanded, setIsExpanded] = useState(false);
 
-    setIsExpanded.handleClick = () =>{
-        accordionContent
-    }
 
     return(
         <footer className='containers-center'>

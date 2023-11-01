@@ -1,6 +1,6 @@
 export default function AboutUs(){
     return(
-        <article className="pt-[10rem] max-w-screen-xl mx-auto">
+        <article className="py-[10rem] max-w-screen-xl mx-auto">
             <h1 className="text-3xl text-center font-bold">About berrynet</h1>
             <br />
             <p>Berrynet Internet Service Provider was founded on a vision of bringing fast and reliable internet connectivity to communities, setting the stage for a digital revolution. Our journey began in [tahun pendirian] when a group of forward-thinking individuals came together with a shared mission: to bridge the digital divide and empower people with seamless online experiences.</p>

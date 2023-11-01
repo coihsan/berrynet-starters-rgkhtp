@@ -1,8 +1,9 @@
 export default function Coverage(){
     return(
-        <section>
-            <div className='flex flex-col gap-3 px-3 py-5 bg-blue-800 rounded-xl'>
-                        <select className='text-black rounded-md h-[2rem]' name="" id="" placeholder='Select area'>
+        <section className="max-w-screen-xl mx-auto py-[10rem]">
+            <h1 className="text-3xl text-center pb-[2rem]">Find berrynet in your area</h1>
+                    <div className='flex flex-col gap-3 max-w-3xl mx-auto bg-rose-800'>
+                        <select className='text-black bg-white max-w-md rounded-md h-[2rem]' name="" id="" placeholder='Select area'>
                             <option value="01" disabled>Select Area :</option>
                             <option value="01">Jakarta Barat</option>
                             <option value="Jakarta">Jakarta Utara</option>
@@ -13,17 +14,7 @@ export default function Coverage(){
                             <option value="Surabaya">Surabaya</option>
                             <option value="Bandung">Bandung</option>
                         </select>
-                        <div className='grid grid-cols-2 gap-5'>
-                        <div className='flex flex-col gap-3'>
-                            <h2 className='text-[1rem]'>Sales Center</h2>
-                            <span className='text-[14px]'>021 1234 5678</span>
-                            <span className='text-[14px]'>0817 1234 5678</span>
-                        </div>
-                        <div className='flex flex-col gap-3'>
-                            <h2 className='text-[1rem]'>Customer Service</h2>
-                            <span className='text-[14px]'>021 1234 5678</span>
-                        </div>
-                        </div>
+                        
                     </div>
         </section>
     )

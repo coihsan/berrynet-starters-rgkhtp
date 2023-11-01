@@ -143,27 +143,3 @@ export const SERVICESDATA = [
     }
 ]
 
-export const searcharea = [
-    {
-        id: 0,
-        nameplace: "Tangerang City Mall",
-        value: "tangerangkota",
-        city: "Tangerang Kota",
-        phone: "02112345678",
-        whatsapp: "08121234567890",
-        location: "Bikini Bottom - Tangerang City Mall, Flor 2",
-        getdirection: "#",
-        operasional: "09.00 - 17:00"
-    },
-    {
-        id: 0,
-        nameplace: "Alam Sutera Mall",
-        value: "tangerangkota",
-        city: "Tangerang Kota",
-        phone: "02112345678",
-        whatsapp: "08121234567890",
-        location: "Bikini Bottom - Tangerang City Mall, Flor 2",
-        getdirection: "#",
-        operasional: "09.00 - 17:00"
-    }
-]

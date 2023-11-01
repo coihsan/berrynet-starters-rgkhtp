@@ -37,7 +37,7 @@ export default function Footer(){
                     </h3>
                     <ul className={'accordionContent max-[600px]:hidden flex flex-col gap-2 pt-[1rem] '}>
                         {quicklink.map((quicklink)=>(
-                            <li key={quicklink.id} className={'hover:translate-x-[5px] text-[14px] transition-transform ease-in-out cursor-pointer'}><Link className='' href={quicklink.path}>{quicklink.title}</Link></li>
+                            <li key={quicklink.id} className={'hover:text-amber-500 hover:translate-x-[5px] text-[14px] transition-transform ease-in-out cursor-pointer'}><Link className='' href={quicklink.path}>{quicklink.title}</Link></li>
                         ))}
                     </ul>
                 </div>
@@ -45,7 +45,7 @@ export default function Footer(){
                     <h3 className='text-white text-[1.2rem] max-[600px]:bg-slate-400 max-[600px]:w-full max-[600px]:text-start max-[600px]:text-black max-[600px]:text-[1rem] max-[600px]:px-[1rem] rounded-md'>Our Products</h3>
                     <ul className='flex flex-col gap-2 pt-[1rem] max-[600px]:hidden'>
                         {ourproducts.map((ourproducts)=>(
-                            <li key={ourproducts.id} className='hover:translate-x-[5px] text-[14px] transition-transform ease-in-out cursor-pointer'>{ourproducts.title}</li>
+                            <li key={ourproducts.id} className='hover:text-sky-500 hover:translate-x-[5px] text-[14px] transition-transform ease-in-out cursor-pointer'>{ourproducts.title}</li>
                         ))}
                     </ul>
                 </div>
@@ -53,7 +53,7 @@ export default function Footer(){
                     <h3 className='text-white text-[1.2rem] max-[600px]:bg-slate-400 max-[600px]:w-full max-[600px]:text-start max-[600px]:text-black max-[600px]:text-[1rem] max-[600px]:px-[1rem] rounded-md'>Our Company</h3>
                     <ul className='flex flex-col gap-2 pt-[1rem] max-[600px]:hidden'>
                         {company.map((company)=>(
-                            <li key={company.id} className='hover:translate-x-[5px] text-[14px] transition-transform ease-in-out cursor-pointer'>{company.title}</li>
+                            <li key={company.id} className='hover:text-green-500 hover:translate-x-[5px] text-[14px] transition-transform ease-in-out cursor-pointer'>{company.title}</li>
                         ))}
                     </ul>
                 </div>
@@ -61,7 +61,7 @@ export default function Footer(){
                     <h3 className='text-white text-[1.2rem] max-[600px]:bg-slate-400 max-[600px]:w-full max-[600px]:text-start max-[600px]:text-black max-[600px]:text-[1rem] max-[600px]:px-[1rem] rounded-md'>Help & Support</h3>
                     <ul className='flex flex-col gap-2 pt-[1rem] max-[600px]:hidden'>
                         {helpsupport.map((helpsupport)=>(
-                            <li key={helpsupport.id} className='hover:translate-x-[5px] text-[14px] transition-transform ease-in-out cursor-pointer'>{helpsupport.title}</li>
+                            <li key={helpsupport.id} className='hover:text-rose-500 hover:translate-x-[5px] text-[14px] transition-transform ease-in-out cursor-pointer'>{helpsupport.title}</li>
                         ))}
                     </ul>
                 </div>

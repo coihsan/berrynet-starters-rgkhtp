@@ -19,12 +19,24 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+html{
+  background-color: #09090b;
+}
 body {
   color: #fafafa;
-  background: #0a0a0a;
+  background: #09090b;
 }
-
+.herograd{
+  background-color:hsla(0,0%,0%,1);
+  background-image:
+  radial-gradient(at 77% 66%, hsla(266,0%,0%,1) 0px, transparent 50%),
+  radial-gradient(at 82% 9%, hsla(266,0%,0%,1) 0px, transparent 50%),
+  radial-gradient(at 45% 89%, hsla(360,0%,0%,1) 0px, transparent 50%),
+  radial-gradient(at 26% 56%, hsla(330,0%,0%,1) 0px, transparent 50%),
+  radial-gradient(at 51% 52%, hsla(243,79%,51%,1) 0px, transparent 50%),
+  radial-gradient(at 35% 30%, hsla(217,100%,50%,1) 0px, transparent 50%),
+  radial-gradient(at 63% 32%, hsla(330,93%,49%,1) 0px, transparent 50%);
+}
 @layer utilities{
   .flexCenter{
     @apply flex items-center justify-center

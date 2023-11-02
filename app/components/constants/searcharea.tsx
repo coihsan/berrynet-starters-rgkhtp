@@ -1,9 +1,11 @@
-export const searcharea = [
+
+
+export const SearchArea  = [
     {
         id: 0,
-        value: "tangerangkota",
+        searchterms: "tangerangkota",
         regency: "Tangerang Kota",
-        village: "karawaci",
+        village: "Karawaci",
         postalcode: "1234567",
         salescenter: "0812 12345 6789",
         helpcenter: "021 1234 5678",
@@ -11,7 +13,7 @@ export const searcharea = [
     },
     {
         id: 1,
-        value: "tangerangselatan",
+        searchterms: "tangerangselatan",
         regency: "Tangerang Selatan",
         village: "Serpong",
         postalcode: "1234567",
@@ -21,7 +23,7 @@ export const searcharea = [
     },
     {
         id: 2,
-        value: "bekasiutara",
+        searchterms: "bekasiutara",
         regency: "Bekasi Utara",
         village: "Harapan Baru",
         postalcode: "1234567",
@@ -31,7 +33,7 @@ export const searcharea = [
     },
     {
         id: 3,
-        value: "bekasiutara",
+        searchterms: "bekasiutara",
         regency: "Bekasi Utara",
         village: "Harapan Jaya",
         postalcode: "1234567",

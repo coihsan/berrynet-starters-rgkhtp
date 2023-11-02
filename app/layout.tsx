@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Navbar from '@/app/navbar'
+import Navbarss from '@/app/navbarss'
 import Footer from '@/app/Footer'
 import Overlay from '@/app/components/overlay'
 import {Providers} from "./providers";
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#070d2b] dark`}>
-        <Navbar />
+        <Navbarss />
         <Providers>
           {children}
           </Providers>

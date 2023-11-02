@@ -41,5 +41,25 @@ export const SearchArea  = [
         helpcenter: "021 1234 5678",
         provinces: "Bekasi"
     },
+    {
+        id: 4,
+        searchterms: "bekasibarat",
+        regency: "Bekasi Barat",
+        village: "Bintara Jaya",
+        postalcode: "1234567",
+        salescenter: "0812 12345 6789",
+        helpcenter: "021 1234 5678",
+        provinces: "Bekasi"
+    },
+    {
+        id: 5,
+        searchterms: "bekasibarat",
+        regency: "Bekasi Barat",
+        village: "Bintara",
+        postalcode: "1234567",
+        salescenter: "0812 12345 6789",
+        helpcenter: "021 1234 5678",
+        provinces: "Bekasi"
+    },
 
 ]

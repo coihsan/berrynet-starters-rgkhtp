@@ -27,7 +27,7 @@ export function Segmentation(){
 
 const Hero = () =>{
     return (
-        <section className='px-2 flexColCenter gap-5 w-full py-[10rem] h-[100vh] max-[600px]:h-full  max-[600px]:pt-[7rem] '>
+        <section className='px-2 flexColCenter gap-5 w-full h-[100vh] max-[600px]:h-full  max-[600px]:py-[5rem] '>
             <center className={'text-6xl max-w-screen-lg max-[600px]:text-4xl font-bold text-white '}>Experience the Difference of <br /> High-Speed Internet</center>
             <center className='text-zinc-300 text-2xl max-w-3xl max-[600px]:text-[1.2rem] leading-normal'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</center>
 

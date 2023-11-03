@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Navbarss from '@/app/navbarss'
+import Navbarss from '@/app/Nav'
 import Footer from '@/app/Footer'
 import Overlay from '@/app/components/overlay'
 import {Providers} from "./providers";

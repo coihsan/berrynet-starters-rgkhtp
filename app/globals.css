@@ -36,13 +36,13 @@ body {
 }
 @layer utilities{
   .flexCenter{
-    @apply flex items-center justify-center
+    @apply flex items-center justify-center;
   }
   .flexBetween{
-    @apply flex items-center justify-between
+    @apply flex items-center justify-between;
   }
   .flexColCenter{
-    @apply flex flex-col items-center justify-center
+    @apply flex flex-col items-center justify-center;
   }
   .card-variants-1{
     background-color: rgb(49, 46, 129);
@@ -50,5 +50,8 @@ body {
   }
   .containers-center{
     @apply max-w-screen-xl mx-auto px-[1rem]
+  }
+  .stylingNav{
+    @apply px-4 py-2 rounded-full border border-zinc-500/30 hover:bg-yellow-500 hover:scale-[0.95] hover:text-zinc-900 transition-all ease-in-out tracking-wide self-stretch;
   }
 }

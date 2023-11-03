@@ -7,7 +7,7 @@ import Image from 'next/image'
 export function Segmentation(){
 
     return (
-        <div className='grid grid-cols-3 max-[600px]:grid-cols-1 gap-5 max-w-screen-xl '>
+        <div className='grid grid-cols-3 max-[600px]:grid-cols-1 gap-3 max-w-screen-xl '>
             {SERVICESDATA.map((data) =>(
                 <Link
                     style={data.theme}
@@ -27,17 +27,17 @@ export function Segmentation(){
 
 const Hero = () =>{
     return (
-        <section className='px-2 flexColCenter gap-5 w-full h-[100vh] max-[600px]:h-full max-[600px]:py-[5rem] '>
-            <Image src="/storm.png" width={300} height={600} alt='storm' />
+        <section className='px-2 flexBetween gap-5 w-full max-[600px]:flex-col-reverse max-[600px]:h-full max-[600px]:py-[5rem] max-w-screen-xl mx-auto'>
             <div>
-            <center className={'text-6xl max-w-screen-lg max-[600px]:text-4xl font-bold text-white '}>Experience the Difference of <br /> High-Speed Internet</center>
-            <center className='text-zinc-300 text-2xl max-w-3xl max-[600px]:text-[1.2rem] leading-normal'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</center>
+            <h1 className={'text-6xl max-w-screen-lg max-[600px]:text-4xl font-bold text-white '}>Experience the Difference <br /> of High-Speed Internet</h1>
+            <p className='text-zinc-300 text-2xl pt-[1rem] max-w-3xl max-[600px]:text-[1.2rem] leading-normal'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</p>
 
-            <div className='pt-5 flexColCenter gap-3'>
-                <center className='mb-5 text-[1.5rem] max-[600px]:text-[1rem]'>What type of internet do you need?</center>
+            <div className='pt-9 flex flex-col gap-3'>
+                <p className='mb-5 text-[1.2rem] px-5 py-2 rounded-full bg-gradient-to-br from-purple-900/50 to-sky-900/30 border border-zinc-50/20 w-max'>What type of internet do you need?</p>
                 <Segmentation />
             </div>
             </div>
+            <img className='w-[400px] max-[600px]:w-[200px] h-auto' src="/storm.webp" alt='storm' />
         </section>
     )
 }

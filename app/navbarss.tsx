@@ -27,8 +27,8 @@ const navitems = [
 export default function Navbarss(){
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     return (
-        <Navbar onMenuOpenChange={setIsMenuOpen} className='w-full mx-auto'>
-          <NavbarContent>
+        <Navbar onMenuOpenChange={setIsMenuOpen} className='w-full  mx-auto'>
+          <NavbarContent >
             <NavbarMenuToggle
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
               className="sm:hidden"
@@ -42,7 +42,7 @@ export default function Navbarss(){
 
           <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem isActive>
-            <Link color="foreground" href="#">
+            <Link color="foreground" href="/">
               Home
             </Link>
           </NavbarItem>
@@ -57,16 +57,10 @@ export default function Navbarss(){
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="/products">
-              Products
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
             <Link color="foreground" href="/coverage">
               Coverage
             </Link>
           </NavbarItem>
-          <NavbarItem>
           <Dropdown>
           <NavbarItem>
             <DropdownTrigger>
@@ -124,7 +118,6 @@ export default function Navbarss(){
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
-          </NavbarItem>
           </NavbarContent>
           
           <NavbarContent justify="center">

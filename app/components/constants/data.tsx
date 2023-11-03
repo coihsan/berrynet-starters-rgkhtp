@@ -16,7 +16,7 @@ export const quicklink = [
     },
     {
         id: 3,
-        title: "Cek Area",
+        title: "Coverage",
         path: "#"
     },
     {

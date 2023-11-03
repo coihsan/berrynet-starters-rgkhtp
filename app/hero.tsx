@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { lusitana } from '@/app/ui/fonts';
 import {SERVICESDATA} from '@/app/components/constants/data'
-
+import Image from 'next/image'
 
 export function Segmentation(){
 
@@ -28,12 +28,15 @@ export function Segmentation(){
 const Hero = () =>{
     return (
         <section className='px-2 flexColCenter gap-5 w-full h-[100vh] max-[600px]:h-full max-[600px]:py-[5rem] '>
+            <Image src="/storm.png" width={300} height={600} alt='storm' />
+            <div>
             <center className={'text-6xl max-w-screen-lg max-[600px]:text-4xl font-bold text-white '}>Experience the Difference of <br /> High-Speed Internet</center>
             <center className='text-zinc-300 text-2xl max-w-3xl max-[600px]:text-[1.2rem] leading-normal'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</center>
 
             <div className='pt-5 flexColCenter gap-3'>
                 <center className='mb-5 text-[1.5rem] max-[600px]:text-[1rem]'>What type of internet do you need?</center>
                 <Segmentation />
+            </div>
             </div>
         </section>
     )

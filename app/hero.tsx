@@ -51,12 +51,12 @@ export function Segmentation(){
 
 const Hero = () =>{
     return (
-        <section className='px-2 flexBetween h-[100vh] gap-5 w-full max-[600px]:flex-col-reverse max-[600px]:h-full max-[600px]:py-[5rem] max-w-screen-xl mx-auto'>
+        <section className='px-2 flexBetween h-[100vh] gap-5 w-full max-[600px]:flex-col-reverse max-[600px]:h-full max-[600px]:py-[5rem] containers-center mx-auto'>
             <div>
-            <h1 className={'text-6xl max-w-screen-lg max-[600px]:text-4xl font-bold text-white '}>Experience the Difference <br /> of High-Speed Internet</h1>
-            <p className='text-zinc-300 text-2xl pt-[1rem] max-w-3xl max-[600px]:text-[1.2rem] leading-normal'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</p>
+            <h1 className={'text-6xl max-w-screen-lg max-[600px]:text-center max-[600px]:text-4xl font-bold text-white '}>Experience the Difference <br /> of High-Speed Internet</h1>
+            <p className='max-[600px]:text-center text-zinc-300 text-2xl pt-[1rem] max-w-3xl max-[600px]:text-[1.2rem] leading-normal'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</p>
 
-            <div className='pt-9 flex flex-col gap-3'>
+            <div className='pt-9 flex flex-col gap-3 max-[600px]:items-center'>
                 <div className='mb-5 text-[1rem] font-medium p-[1px] rounded-full bg-gradient-to-r from-sky-500/80 to-purple-500/80 w-max'>
                     <p className='w-full h-full rounded-full px-4 py-2 bg-gradient-to-r from-sky-950 to-purple-950'>What type of internet do you need?</p>
                 </div>

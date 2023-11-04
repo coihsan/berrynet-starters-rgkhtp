@@ -12,10 +12,10 @@ export default function Nav(){
 
     return (
         <nav onMouseEnter={() => setHovering(null)} className='fixed top-0 left-0 backdrop-blur-xl bg-black/40 w-full py-5'>
-            <div className='flexBetween gap-3 max-w-screen-xl mx-auto'>
-                <Image src="/berrynet.svg" width={160} height={60} alt='berrynetLogo' />
-                <div className='flex gap-2'>
-                    <div className='flex relative items-center gap-2'>
+            <div className='flexBetween gap-3 max-w-screen-xl mx-auto px-[1rem]'>
+                <Image className=' max-[600px]:w-[120px]' src="/berrynet.svg" width={160} height={60} alt='berrynetLogo' />
+                <div className='flex gap-2 max-[600px]:flex-col  max-[600px]:hidden'>
+                    <div className='flex relative items-center gap-2 max-[600px]:flex-col max-[600px]:absolute  max-[600px]:left-0  max-[600px]:top-[6rem]'>
                         <Link className='stylingNav' href="/">Home</Link>
                         <Link
                             onMouseEnter={(event) => {

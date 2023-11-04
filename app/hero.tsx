@@ -8,19 +8,36 @@ export function Segmentation(){
 
     return (
         <div className='grid grid-cols-3 max-[600px]:grid-cols-1 gap-3 max-w-screen-xl '>
-            {SERVICESDATA.map((data) =>(
-                <Link
-                    style={data.theme}
-                    href={data.path}
-                    className="flexCenter gap-3 group rounded-lg w-full p-5 transition-all hover:translate-y-[-5px] ease-in-out"
+            <Link
+                    href="/"
+                    className="flexCenter bg-gradient-to-br from-indigo-500 to-indigo-700 gap-3 group rounded-lg w-full p-3 transition-all hover:translate-y-[-5px] ease-in-out"
                     rel="noopener noreferrer"
                     >
-                    <h2 className={`text-1xl font-medium`}>{data.title}</h2>
-                    <div className='group-hover:bg-white text-indigo-700 bg-transparent py-1 px-5 transition-all rounded-full flexCenter gap-2'>
+                    <h2 className={`text-[20px] font-bold`}>Home</h2>
+                    <div className='bg-transparent py-1 px-5 transition-all rounded-full flexCenter gap-2'>
+                        <svg className='fill-white inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </div>
+            </Link>
+            <Link
+                    href="/"
+                    className="flexCenter bg-gradient-to-br from-green-500 to-green-700 gap-3 group rounded-lg w-full p-3 transition-all hover:translate-y-[-5px] ease-in-out"
+                    rel="noopener noreferrer"
+                    >
+                    <h2 className={`text-[20px] font-bold`}>Apartment</h2>
+                    <div className='bg-transparent py-1 px-5 transition-all rounded-full flexCenter gap-2'>
                         <svg className='fill-blue-50 group-hover:fill-blue-950 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                     </div>
-                </Link>
-            ))}
+            </Link>
+            <Link
+                    href="/"
+                    className="flexCenter bg-gradient-to-br from-yellow-500 to-yellow-700 gap-3 group rounded-lg w-full p-3 transition-all hover:translate-y-[-5px] ease-in-out"
+                    rel="noopener noreferrer"
+                    >
+                    <h2 className={`text-[20px] font-bold`}>Business</h2>
+                    <div className='bg-transparent py-1 px-5 transition-all rounded-full flexCenter gap-2'>
+                        <svg className='fill-blue-50 group-hover:fill-blue-950 inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </div>
+            </Link>
         </div>
     )
 }

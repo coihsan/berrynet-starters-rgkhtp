@@ -52,6 +52,6 @@ body {
     @apply max-w-screen-xl mx-auto px-[1rem]
   }
   .stylingNav{
-    @apply px-4 py-2 rounded-full border border-zinc-500/30 hover:bg-yellow-500 hover:scale-[0.95] hover:text-zinc-900 transition-all ease-in-out tracking-wide self-stretch;
+    @apply px-4 py-2 flex items-center gap-2 rounded-full border border-zinc-500/30 hover:bg-yellow-500 hover:scale-[0.95] hover:text-zinc-900 transition-all ease-in-out tracking-wide self-stretch;
   }
 }

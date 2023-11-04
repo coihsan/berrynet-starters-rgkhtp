@@ -5,8 +5,10 @@ import './globals.css'
 import Feature from './Feature';
 export default function Home() {
   return (
-    <main className="herograd">
+    <main >
+     <div className="herograd">
       <Hero />
+     </div>
       <Feature/>
     </main>
   )

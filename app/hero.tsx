@@ -6,7 +6,7 @@ import Image from 'next/image'
 export function Segmentation(){
 
     return (
-        <div className='grid grid-cols-3 max-[600px]:grid-cols-1 gap-3'>
+        <div className='grid grid-cols-3 max-[600px]:grid-cols-1 max-[600px]:w-full gap-3'>
             {SERVICESDATA.map((services) =>(
                 <Link
                     href={services.path}
@@ -28,14 +28,14 @@ export function Segmentation(){
 
 const Hero = () =>{
     return (
-        <section className='px-2 flexBetween h-[100vh] gap-5 w-full max-[600px]:flex-col-reverse max-[600px]:h-full max-[600px]:py-[5rem] containers-center mx-auto'>
+        <section className='px-2 flexBetween h-[100vh] gap-5 w-full max-[600px]:flex-col max-[600px]:h-full max-[600px]:pt-[8rem] max-[600px]:pb-[5rem] containers-center mx-auto'>
             <div>
             <h1 className={'text-6xl max-w-screen-lg max-[600px]:text-center max-[600px]:text-4xl font-bold text-white '}>Experience the Difference <br /> of High-Speed Internet</h1>
             <p className='max-[600px]:text-center text-zinc-300 text-2xl pt-[1rem] max-w-3xl max-[600px]:text-[1.2rem] leading-normal'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</p>
 
             <div className='pt-9 flex flex-col gap-3 max-[600px]:items-center'>
-                <div className='mb-5 text-[1rem] font-medium p-[1px] rounded-full bg-gradient-to-r from-sky-500/80 to-purple-500/80 w-max'>
-                    <p className='w-full h-full rounded-full px-4 py-2 bg-gradient-to-r from-sky-950 to-purple-950'>What type of internet do you need?</p>
+                <div className='mb-5 text-[1rem] font-medium p-[1px] rounded-full bg-gradient-to-r from-zinc-500/50 to-zinc-200/30 w-max'>
+                    <p className='w-full h-full rounded-full px-4 py-2 bg-gradient-to-r from-zinc-950 to-zinc-800'>What type of internet do you need?</p>
                 </div>
                 <Segmentation />
             </div>

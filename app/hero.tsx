@@ -43,7 +43,7 @@ export function Segmentation(){
                     rel="noopener noreferrer"
                     >
                     <motion.div 
-                        variant={item}
+                        variants={item}
                         className='h-full w-full rounded-full flexCenter gap-3 p-3 bg-gradient-to-r transition-all ease-linear from-blue-950 to-purple-950 hover:from-blue-600 hover:to-purple-600'>
                         <span>{services.icon}</span>
                         <h2 className={`text-[20px] font-bold`}>{services.title}</h2>

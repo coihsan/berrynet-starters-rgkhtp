@@ -30,7 +30,7 @@ export function Segmentation(){
 
     return (
         <motion.div 
-            variant={container} 
+            variants={container} 
             initial="hidden"
             animate="visible"
             className='grid grid-cols-3 max-[600px]:grid-cols-1 max-[600px]:w-full gap-3'>

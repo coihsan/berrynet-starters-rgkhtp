@@ -5,27 +5,55 @@ import {motion} from 'framer-motion'
 import { lusitana } from '@/app/ui/fonts';
 import {SERVICESDATA} from '@/app/components/constants/data'
 import Image from 'next/image'
+
 export function Segmentation(){
 
+    const container = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: {
+            delayChildren: 0.3,
+            staggerChildren: 0.2
+          }
+        }
+      }
+        
+      const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1
+        }
+      }
+
     return (
-        <div className='grid grid-cols-3 max-[600px]:grid-cols-1 max-[600px]:w-full gap-3'>
+        <motion.div 
+            variant={container} 
+            initial="hidden"
+            animate="visible"
+            className='grid grid-cols-3 max-[600px]:grid-cols-1 max-[600px]:w-full gap-3'>
             {SERVICESDATA.map((services) =>(
                 <Link
-                key={services.id}
+                    
+                    key={services.id}
                     href={services.path}
-                    className="bg-gradient-to-r from-sky-500 to-pink-500  group rounded-full w-full p-[1px] transition-all hover:translate-y-[-5px] ease-in-out hover:shadow-lg hover:shadow-blue-600"
+                    className="bg-gradient-to-r from-sky-500 to-pink-500  group rounded-full w-full p-[1px] transition-all ease-linear hover:translate-y-[-5px] ease-in-out hover:shadow-lg hover:shadow-pink-900"
                     rel="noopener noreferrer"
                     >
-                    <div className='h-full w-full rounded-full flexCenter gap-3 p-3 bg-gradient-to-r from-blue-950 to-purple-950'>
+                    <motion.div 
+                        variant={item}
+                        className='h-full w-full rounded-full flexCenter gap-3 p-3 bg-gradient-to-r transition-all ease-linear from-blue-950 to-purple-950 hover:from-blue-600 hover:to-purple-600'>
                         <span>{services.icon}</span>
                         <h2 className={`text-[20px] font-bold`}>{services.title}</h2>
                         <div className='bg-transparent transition-all rounded-full flexCenter gap-2'>
                             <svg className='fill-white inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none' xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                         </div>
-                    </div>
+                    </motion.div>
                 </Link>
             ) )}
-        </div>
+        </motion.div>
     )
 }
 

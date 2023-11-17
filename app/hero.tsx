@@ -1,5 +1,7 @@
 
+"use client"
 import Link from 'next/link'
+import {motion} from 'framer-motion'
 import { lusitana } from '@/app/ui/fonts';
 import {SERVICESDATA} from '@/app/components/constants/data'
 import Image from 'next/image'
@@ -31,7 +33,11 @@ const Hero = () =>{
     return (
         <section className='px-2 flexBetween h-[100vh] gap-5 w-full max-[600px]:flex-col max-[600px]:h-full max-[600px]:pt-[8rem] max-[600px]:pb-[5rem] containers-center mx-auto'>
             <div>
-            <h1 className={'text-6xl max-w-screen-lg max-[600px]:text-center max-[600px]:text-4xl font-bold text-white '}>Experience the Difference <br /> of High-Speed Internet</h1>
+            <motion.h1 
+            initial={{ opacity: 0 }}
+            transition={{ backInOut: [0.17, 0.67, 0.83, 0.67] }}
+            whileInView={{ opacity: 1 }}
+            className={'text-6xl max-w-screen-lg max-[600px]:text-center max-[600px]:text-4xl font-bold text-white '}>Experience the Difference <br /> of High-Speed Internet</motion.h1>
             <p className='max-[600px]:text-center text-zinc-300 text-2xl pt-[1rem] max-w-3xl max-[600px]:text-[1.2rem] leading-normal'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</p>
 
             <div className='pt-9 flex flex-col gap-3 max-[600px]:items-center'>

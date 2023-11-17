@@ -35,13 +35,13 @@ const Hero = () =>{
             <p className='max-[600px]:text-center text-zinc-300 text-2xl pt-[1rem] max-w-3xl max-[600px]:text-[1.2rem] leading-normal'>Get the fastest and most reliable internet speeds in your area, with plans to fit every budget.</p>
 
             <div className='pt-9 flex flex-col gap-3 max-[600px]:items-center'>
-                <div className='mb-5 text-[1rem] font-medium p-[1px] rounded-full w-max'>
-                    <p className='w-full h-full rounded-full px-4 py-2 '>What type of internet do you need?</p>
+                <div className='mb-5 text-[1rem] font-medium w-max'>
+                    <p>What type of internet do you need?</p>
                 </div>
                 <Segmentation />
             </div>
             </div>
-            <img className='w-[400px] max-[600px]:w-[200px] h-auto' src="/storm.webp" alt='storm' />
+            <Image className='w-[400px] max-[600px]:w-[200px] h-auto' src={"/storm.webp"} width={200} height={50} alt='storm' />
         </section>
     )
 }

@@ -7,18 +7,22 @@ import {productsIcon} from "@/app/Icons";
 import { data } from 'autoprefixer'
 const navitems = [
     {
+      id: 0,
         title: "Why berrynet?",
         path: "/whyberrynet",
     },
     {
+      id: 1,
         title: "About berrynet",
         path: "/about",
     },
     {
+      id: 2,
         title: "Products",
         path: "/products",
     },
     {
+      id: 3,
         title: "Coverage",
         path: "/coverage",
     },
@@ -130,7 +134,7 @@ export default function Navbarss(){
           </NavbarContent>
           <NavbarMenu>
           {navitems.map((menu) =>(
-                <NavbarItem>
+                <NavbarItem key={menu.id}>
                     <Link href={menu.path} className='flex gap-2 font-bold text-white hover:text-indigo-100 px-5 py-2 hover:bg-indigo-600 rounded-full transition-all'>{menu.title}</Link>
                 </NavbarItem>
             ))}

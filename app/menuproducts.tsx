@@ -49,3 +49,5 @@ export const MenuProducts = forwardRef<HTMLElement, MenuProductsProps>((props, r
     </nav>
   );
 });
+MenuProducts.displayName = "MenuProducts";
+export default MenuProducts

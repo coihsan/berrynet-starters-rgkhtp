@@ -9,8 +9,9 @@ export function Segmentation(){
         <div className='grid grid-cols-3 max-[600px]:grid-cols-1 max-[600px]:w-full gap-3'>
             {SERVICESDATA.map((services) =>(
                 <Link
+                key={services.id}
                     href={services.path}
-                    className="bg-gradient-to-r from-sky-500 to-pink-500  p-[1px] group rounded-full w-full p-[1px] transition-all hover:translate-y-[-5px] ease-in-out hover:shadow-lg hover:shadow-blue-600"
+                    className="bg-gradient-to-r from-sky-500 to-pink-500  group rounded-full w-full p-[1px] transition-all hover:translate-y-[-5px] ease-in-out hover:shadow-lg hover:shadow-blue-600"
                     rel="noopener noreferrer"
                     >
                     <div className='h-full w-full rounded-full flexCenter gap-3 p-3 bg-gradient-to-r from-blue-950 to-purple-950'>
